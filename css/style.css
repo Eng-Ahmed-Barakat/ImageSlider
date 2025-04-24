@@ -1,0 +1,78 @@
+body {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  background-color: #eee;
+  margin: 0;
+}
+h1 {
+  padding: 20px;
+  margin: 0 0 20px;
+  background-color: white;
+  text-align: center;
+}
+.slider-contanier {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.slider {
+  width: 800px;
+  height: 450px;
+  position: relative;
+}
+.slider .img-id {
+  position: absolute;
+  background-color: black;
+  color: white;
+  left: 15px;
+  top: 15px;
+  z-index: 99;
+  border-radius: 6px;
+  padding: 10px;
+}
+.slider img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.slider img.active {
+  opacity: 1;
+}
+button {
+  padding: 0 20px;
+  background-color: #9e9e9e;
+  color: white;
+  cursor: pointer;
+  height: 450px;
+  border: none;
+  font-size: 20px;
+  transition: 0.3s;
+  writing-mode: vertical-lr;
+}
+button:not(:disabled):hover {
+  background-color: #7e7e7e;
+}
+button:disabled {
+  opacity: 0.5;
+  cursor: no-drop;
+}
+.galry-contaner {
+  width: 800px;
+  margin: auto;
+  display: grid;
+}
+.galry-contaner img {
+  max-width: 100%;
+  opacity: 0.4;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.galry-contaner img:hover,
+.galry-contaner img.active {
+  opacity: 1;
+}
